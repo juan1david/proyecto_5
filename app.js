@@ -1,8 +1,11 @@
+console.log(`TRABAJO ELABORADO POR: JUAN DAVID CUELLAR ROMERO`);
+console.log(`FICHA: 2798618`);
+console.log(`PROGRAMA: ANALISIS Y DESARROLLO DE SOFTWARE`);
 //se utiliza para agregar estilos y colores a la salida de texto en la terminal. 
 require('colors'); 
 
 //permitirá acceder a las exportaciones que haya definido en ese archivo y utilizarlas en el archivo actual.
-const math = require('./proyecto_5/math.js')
+const math = require('./math.js')
 
 //se utiliza para definir un punto de entrada o función principal de un programa
 const main = async () => {
@@ -16,13 +19,14 @@ const main = async () => {
     //Código a ejecutar para cada elemento   
     for (const numero of numeros) {
         //Implementación de la función para invertir el número
-        const invertidoComoNumero = math.invertirnumero(numero);
+        const invertidoComoNumero = math.invertirNumero(numero);
         //Función para invertir un número y devolver su representación invertida como una cadena de caracteres.
         const invertidoComoCadena = math.invertirNumeroComoCadena(numero);
         //Mensaje de salida que muestra información sobre un número y su inversión como número y cadena.
         console.log("el numero '%s' es invertido como numero, y '%s' como cadena", 
         numero, invertidoComoNumero, invertidoComoCadena);
     }
+
     //Arreglo que almacena una colección de cadenas de texto.
     const textos = ['HOLA SENA', 'FICHA 2798618', 'ANALISIS Y DESARROLLO DE SOFTWARE']
     //Itera a través del arreglo 'textos' y realiza una operación para cada cadena de texto.
